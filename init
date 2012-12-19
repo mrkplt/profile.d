@@ -27,4 +27,7 @@ load_conf "${PROFILE_PATH}/${PLATFORM}"
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+<<<<<<< HEAD
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+=======
+>>>>>>> 3e3c12c4e5e587022e5b82eec12a96286de4148f
