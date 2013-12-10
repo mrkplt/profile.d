@@ -45,9 +45,4 @@ else
        ^C   Press Control-C to stop the script
        '
 exit
-
-<<<<<<< HEAD
 fi
-=======
-fi
->>>>>>> 3e3c12c4e5e587022e5b82eec12a96286de4148f
