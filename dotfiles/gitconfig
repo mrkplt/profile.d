@@ -2,7 +2,7 @@
 	email = mark@mrkplt.com
 	name = Mark Platt
 [core]
-	editor = mate -w
+	editor = subl
 [alias]
 	co = checkout
 	ci = commit
@@ -30,7 +30,7 @@
 	status = auto
 [color "branch"]
 	current = yellow reverse
-	local = yellow 
+	local = yellow
 	remote = green
 [color "diff"]
 	meta = yellow bold
