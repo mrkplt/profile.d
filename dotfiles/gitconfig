@@ -2,7 +2,7 @@
 	email = mark@mrkplt.com
 	name = Mark Platt
 [core]
-	editor = subl
+	editor = atom
 [alias]
 	co = checkout
 	ci = commit
