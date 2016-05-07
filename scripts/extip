@@ -1,2 +1,0 @@
-echo 'External: ' | tr -d "\n" & curl http://automation.whatismyip.com/n09230945.asp''
-echo ""

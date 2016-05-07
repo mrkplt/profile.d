@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+#
+# Script for adding github/gitignore data into your current .gitignore
+#
+# Usage: git init-ignore Go Vim
+
+require 'pathname'
+
+PWD = ENV['PWD']
+HOME = ENV['HOME']
+ROOT = Pathname.new File.join(HOME, '.github', 'gitignore')
+
+unless ROOT.exist?
+  `git clone https://github.com/github/gitignore ~/.github/gitignore`
+end
+
+ignores = ARGV.reduce "" do |memo, name|
+  contents = File.read ROOT.join("#{name}.gitignore")
+  memo << "## #{name}\n\n#{contents}\n"
+end
+
+File.write File.join(PWD, '.gitignore'), ignores
