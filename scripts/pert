@@ -1,0 +1,6 @@
+#!/usr/bin/ruby
+
+best, most_likely, worst = *ARGV[0].split('/').map(&:to_f)
+
+puts ((most_likely * 4) + worst + best)/6
+
