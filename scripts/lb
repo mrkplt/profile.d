@@ -1,0 +1,1 @@
+vim '+normal Go' ~/Dropbox/Logbook/$(date '+%Y-%m-%d').md
