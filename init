@@ -19,12 +19,6 @@ PLATFORM=`uname`
 load_conf "${PROFILE_PATH}"
 load_conf "${PROFILE_PATH}/${PLATFORM}"
 
-##
-# Your previous /Users/mplatt/.profile file was backed up as /Users/mplatt/.profile.macports-saved_2011-04-23_at_07:57:00
-##
-
-# MacPorts Installer addition on 2011-04-23_at_07:57:00: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+eval "$(direnv hook bash)"
