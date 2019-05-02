@@ -19,6 +19,4 @@ PLATFORM=`uname`
 load_conf "${PROFILE_PATH}"
 load_conf "${PROFILE_PATH}/${PLATFORM}"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 eval "$(direnv hook bash)"
